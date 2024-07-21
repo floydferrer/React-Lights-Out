@@ -32,7 +32,6 @@ function Board({ nrows, ncols, chanceLightStartsOn }) {
 
   /** create a board nrows high/ncols wide, each cell randomly lit or unlit */
   function createBoard() {
-    let initialBoard = [];
     // TODO: create array-of-arrays of true/false values
     return Array.from({length: nrows}).map(
       row => Array.from({length: ncols}).map(
