@@ -28,7 +28,6 @@ import "./Board.css";
  **/
 
 function Board({ nrows, ncols, chanceLightStartsOn }) {
-  const isLit = () => true ? Math.random() <= chanceLightStartsOn : false;
   const [board, setBoard] = useState(createBoard());
 
   /** create a board nrows high/ncols wide, each cell randomly lit or unlit */
